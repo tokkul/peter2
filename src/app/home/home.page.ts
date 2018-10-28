@@ -7,11 +7,11 @@ import { HostListener } from '@angular/core';
 })
 export class HomePage {
   HomePage=HomePage;
-  test:number="";
+  test:string="";
   constructor(){};
   eventHandler(event){
     console.log(event.target.value[event.target.value.length-1]);
-    if (event.target.value.length%2!==0) {this.test=this.test+" ";};
+    if (event.target.value.length%2!==0) {this.test=this.test+" ";} else {this.test=this.test+"i";};
     switch (event.target.value[event.target.value.length-1]) {
       case "0":
       this.test=this.test+"D";
@@ -26,9 +26,25 @@ export class HomePage {
       this.test=this.test+"M";
       break;
       case "4":
-      this.test=this.test+"5";
+      this.test=this.test+"F";
+      break;
+      case "5":
+      this.test=this.test+"S";
+      break;
+      case "6":
+      this.test=this.test+"G";
+      break;
+      case "7":
+      this.test=this.test+"L";
+      break;
+      case "8":
+      this.test=this.test+"B";
+      break;
+      case "9":
+      this.test=this.test+"P";
       break;
       default:
+      this.test="";
       console.log("Sorry, can't parse");
      }
      return false;

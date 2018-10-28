@@ -1,7 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>About</ion-title>
+    <ion-title>TMS trainer</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+  
+  <p>Enter Text for TMS translation to number</p>
+   <ion-list>
+      <!--<ion-input placeholder="Text Input" [(ngModel)]="test" ></ion-input>-->   
+    <ion-item>
+      <ion-textarea placeholder="Enter a text here" (keyup)="eventHandler($event)">
+      </ion-textarea>
+    </ion-item>
+
+  </ion-list>
+  {{test}}
+
+
+  <p>More info at <a target="_blank" rel="noopener" href="https://litemind.com/major-system/">https://litemind.com/major-system</a></p>
+ 
+</ion-content>

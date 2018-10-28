@@ -1,8 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Contact
-    </ion-title>
+      <ion-title>TMS trainer</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,14 +8,24 @@
   <ion-list>
     <ion-list-header>
       <ion-label>
-        Follow us on Twitter
+          <h2>Enter number for Your TMS words</h2>
+         
+            
+           <ion-item>
+             <ion-textarea placeholder="Enter a number here" (keyup)="eventHandler($event)" clearinput>
+             </ion-textarea>
+           </ion-item>
+       
+         <p></p>
+         {{test}}
+        <p> </p>
+        <p>Mail us at 
+        <a target="_blank" rel="noopener" href="mailto:tokkul@gmail.com">tokkul@gmail.com</a>
+      </p>
+
+      <p>More info at <a target="_blank" rel="noopener" href="https://litemind.com/major-system/">https://litemind.com/major-system</a></p>
+ 
       </ion-label>
     </ion-list-header>
-    <ion-item>
-      <ion-label>
-        <ion-icon name="logo-ionic" slot="start"></ion-icon>
-        @ionicframework
-      </ion-label>
-    </ion-item>
   </ion-list>
 </ion-content>

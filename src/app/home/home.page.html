@@ -1,51 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+    <ion-title> TMS trainer</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster, yes.{{test}}
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
-  <ion-list>
+
+  <p>Enter your number for Your TMS translation</p>
+   <ion-list>
+      <!--<ion-input placeholder="Text Input" [(ngModel)]="test" ></ion-input>-->   
     <ion-item>
-      <ion-label color="primary">Inline Label</ion-label>
-      <!--<ion-input placeholder="Text Input" [(ngModel)]="test" ></ion-input>-->
-      <ion-input placeholder="Text Input" (keyup)="eventHandler($event)" ></ion-input>
+      <ion-textarea placeholder="Enter a number here" (keyup)="eventHandler($event)">
+      </ion-textarea>
     </ion-item>
-  
-    <ion-item>
-      <ion-label color="primary" fixed>Fixed Label</ion-label>
-      <ion-input type="tel" placeholder="Tel Input"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-input type="number" placeholder="Number Input with no label"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label color="primary" stacked>Stacked Label</ion-label>
-      <ion-input type="email" placeholder="Email Input"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label color="primary" stacked>Stacked Label</ion-label>
-      <ion-input type="password" placeholder="Password Input"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label color="primary" floating>Floating Label</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-input placeholder="Clear Input" clearInput></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-textarea placeholder="Enter a description"></ion-textarea>
-    </ion-item>
+
   </ion-list>
+  <p></p>
+  {{test}}
+  <p></p><p></p>
 
-
+  <p>More info at <a target="_blank" rel="noopener" href="https://litemind.com/major-system/">https://litemind.com/major-system</a></p>
+ 
 </ion-content>
